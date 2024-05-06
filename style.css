@@ -1,5 +1,7 @@
 /* Poppins google font link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Bebas neue font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Reset default styles */
 * {
@@ -9,6 +11,7 @@
 
 body{
   margin: 0;
+  height: 100%;
   font-family: poppins;
 }
 
@@ -19,7 +22,7 @@ body{
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #fff;
   text-align: center;
@@ -30,21 +33,23 @@ body{
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #fff;
   color: #000;
 }
 
-.topnav a.active {
-  background-color: #000;
-  color: #fff;
+.search-bar{
+  text-align: center;
+  display: block;
 }
+
+
 
 /* Responsive design */
 .topnav .icon {
   display: none;
 }
 
-
+/* responsive for menu */
 @media screen and (max-width: 600px) {
 
   .topnav a:not(:first-child){display: none}
@@ -52,8 +57,11 @@ body{
     float: right;
     display:block;
   } 
+  .search-bar{
+    display: none;
+  }
 }
-
+/* responsive for menu */
 @media  screen and (max-width: 600px) {
   .topnv.responsive {position: relative}
   .topnav .responsive .icon {
@@ -68,3 +76,25 @@ body{
   }
   
 }
+
+/* hero image */
+.image-container{
+  background-image: url(Imagers/pexels-jonathan-petersson-404181.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  padding: 25px;
+}
+/* button in image section */
+.shop-button{
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  color: #fff;
+  background: transparent;
+  border: 10px;
+  border-color: #fff;
+}
+
+
