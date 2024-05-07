@@ -1,7 +1,9 @@
 /* Poppins google font link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Bebas neue font */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 /* Reset default styles */
 * {
@@ -14,34 +16,63 @@ body{
   height: 100%;
   font-family: poppins;
 }
-
-/* Navigation styling */
-.topnav {
-  overflow: hidden;
-  background-color: #000;
+/* To align the logo, search-bar and the navbar together  */
+.header{
+  height: 80px;
+  display: flex;
+  flex-direction: row;   /*not need cuz the flex fall to row as a defualt*/
+  justify-content: space-between;
+  
 }
 
-.topnav a {
-  float: right;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 17px;
+.logo-container{
+  display: flex;
+  align-items: center;
 }
 
-.topnav a:hover {
-  background-color: #fff;
-  color: #000;
+/* logo */
+.logo{
+  height: 70px;
+  object-fit: cover;
 }
 
 .search-bar{
   text-align: center;
   display: block;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 25px;
+  max-width: 300px;
+  margin-top: 15px;
 }
 
+.search-bar::placeholder{
+  font-family: PT Serif;
+}
+
+/* Navigation styling */
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: Playfair Display;
+}
+
+.topnav a:hover {
+  background-color: #fff;
+  color: #000;
+  /* text-decoration: underline; */
+}
 
 
 /* Responsive design */
@@ -85,16 +116,21 @@ body{
   background-position: center;
   height: 250px;
   padding: 25px;
+  object-fit: cover;
+  /* Ajust the button to the botton left */
+  display: flex;
+  justify-content:left;
+  align-items: end;
 }
 /* button in image section */
 .shop-button{
-  text-align: center;
-  display: flex;
-  justify-content: end;
-  color: #fff;
+  color: #9A9A9A;
   background: transparent;
   border: 10px;
-  border-color: #fff;
+  padding: 10px 5px;
+  border: #9A9A9A solid 3px;
+  font-family: Bebas Neue;
+  font-size: 20px;
 }
 
 
