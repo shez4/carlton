@@ -10,7 +10,8 @@
 
 body{
   margin: 0;
-  font-family: poppins;
+  font-family: Roboto Serif;
+  
 }
 
 /* Navigation styling */
@@ -98,4 +99,47 @@ body{
     height: 400px;
   }
 }
+.enquire { 
+  color: black;
+  position: relative;
+  bottom: -70px ;
+  text-align: center;
+  font-weight: 500;
+  
+}
+/* Horizontal Line */
+hr.line {
+  border: 1 solid rgb(0, 0, 0);
+  position: relative;
+  bottom: -100px;
 
+}
+/* Title for contact section */
+.topic {
+  color: black;
+  position: relative;
+  font-weight: 500;
+  left: 100px;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  
+}
+/* Description for contact section */
+.details {
+  position: relative;
+  left: 120px;
+
+}
+/* button for contact section */
+.contact {
+  position: relative;
+  float: right;
+  height: 70px;
+  width: -700px;
+  margin-right: 50px;
+  font-family: Roboto Serif;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: -70px;
+}
