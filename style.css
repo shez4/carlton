@@ -4,6 +4,9 @@
 /* Bebas neue font */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* Lora font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 
 /* Reset default styles */
 * {
@@ -18,9 +21,9 @@ body{
 }
 /* To align the logo, search-bar and the navbar together  */
 .header{
-  height: 80px;
+  height: 60px;
   display: flex;
-  flex-direction: row;   /*not need cuz the flex fall to row as a defualt*/
+  flex-direction: row;   /*not needed because the flex fall to row as a defualt*/
   justify-content: space-between;
   
 }
@@ -32,18 +35,36 @@ body{
 
 /* logo */
 .logo{
-  height: 70px;
-  object-fit: cover;
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+}
+/* puts the serch-bar and the button side by side */
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 470px;
+}
+
+.search-button{
+  background: transparent;
+  border: 0;
+}
+
+.icon-search{
+  padding-bottom: 5px;
 }
 
 .search-bar{
   text-align: center;
   display: block;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   height: 25px;
   max-width: 300px;
-  margin-top: 15px;
+  border-color: rgb(192, 192, 192);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05)
 }
 
 .search-bar::placeholder{
@@ -54,13 +75,14 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #fff;
+  text-align: center;
+  justify-content: center;
 }
 
 .topnav a {
   float: right;
   display: block;
   color: #000;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -91,6 +113,9 @@ body{
   .search-bar{
     display: none;
   }
+  .icon-search{
+    display: none;
+  }
 }
 /* responsive for menu */
 @media  screen and (max-width: 600px) {
@@ -114,23 +139,98 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 250px;
+  width: 100%;
+  max-width: 100%;
+  height: calc(50vw * 9 / 16);
   padding: 25px;
+  display: block;
   object-fit: cover;
   /* Ajust the button to the botton left */
   display: flex;
   justify-content:left;
   align-items: end;
 }
+
 /* button in image section */
 .shop-button{
   color: #9A9A9A;
   background: transparent;
   border: 10px;
-  padding: 10px 5px;
+  padding: 10px 9px;
   border: #9A9A9A solid 3px;
   font-family: Bebas Neue;
   font-size: 20px;
 }
+/* button hover */
+.shop-button:hover{
+  color: white;
+  background: #9A9A9A;
+}
+
+/* text statement CSS */
+.statement{
+  padding-top: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 20px;
+  font-family: EB Garamond;
+  font-style: italic ;
+  text-align: center;
+}
+
+.topic-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.line1{
+  border: 1px solid black;
+  flex: 1;
+  max-width: 200px;
+}
+
+.featured-products{
+  font-family: Lora;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.line2{
+  border: 1px solid black;
+  flex: 2;
+  max-width: 200px;
+}
+
+.images-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.img1 img{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.img2 img{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.img3 img{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+
+
+
+
 
 
