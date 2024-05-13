@@ -9,9 +9,35 @@
     height: 300px;
 }
 
-.imagers  {
+.image-container  {
     object-fit: cover;
     height: calc(50vw * 9 /16);
     width: 100%;
+    display: flex;
+    
 
 }
+
+.txt  {
+    
+    text-align: center;
+    color: white;
+
+    
+
+}
+
+
+.title {
+
+    text-align: center;
+    border: transparent;
+    color: white;
+    border: 15px solid white;
+}
+
+.title-name{
+    justify-content: center;
+    text-align: center;
+}
+
