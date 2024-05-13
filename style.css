@@ -76,7 +76,6 @@ body{
   overflow: hidden;
   background-color: #fff;
   text-align: center;
-  justify-content: center;
 }
 
 .topnav a {
@@ -103,7 +102,7 @@ body{
 }
 
 /* responsive for menu */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 783px) {
 
   .topnav a:not(:first-child){display: none}
   .topnav a.icon{
@@ -118,7 +117,7 @@ body{
   }
 }
 /* responsive for menu */
-@media  screen and (max-width: 600px) {
+@media  screen and (max-width: 783px) {
   .topnv.responsive {position: relative}
   .topnav .responsive .icon {
     position: absolute;
@@ -194,7 +193,6 @@ body{
   font-family: Lora;
   font-size: 30px;
   font-weight: bold;
-  align-items: center;
 }
 
 .line2{
@@ -230,6 +228,111 @@ body{
 
 
 
+/* responsive product images */
+@media  screen and (max-width: 783px) {
+  .img1 img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+  }
+  
+  .img2 img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+  }
+  
+  .img3 img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+  }
+}
+
+/* responsive for heading and product images section */
+@media  screen and (max-width: 783px) {
+
+  .line1{
+    border: 1px solid black;
+    flex: 1;
+    max-width: 150px;
+  }
+
+  .line2{
+    border: 1px solid black;
+    flex: 2;
+    max-width: 150px;
+  }
+
+  .img1 img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+  }
+  
+  .img2 img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+  }
+  
+  .img3 img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+  }
+}
+
+/* responsive for heading and product images section */
+/* iphone 14 pro max */
+@media  screen and (max-width: 430px) {
+
+  .line1{
+    border: 1px solid black;
+    flex: 1;
+    max-width: 70px;
+  }
+
+  .featured-products{
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .line2{
+    border: 1px solid black;
+    flex: 2;
+    max-width: 70px;
+  }
+
+  .img1 img{
+    object-fit: cover;
+    height: 200px;
+    width: 150px;
+  }
+  
+  .img2 img{
+    object-fit: cover;
+    height: 200px;
+    width: 150px;
+  }
+  
+  .img3 img{
+    object-fit: cover;
+    height: 200px;
+    width: 150px;
+  }
+}
+
+/* Showcase CSS */
+.sm-button{
+  color: #9A9A9A;
+  background: transparent;
+  padding: 10px 9px;
+  border: #9A9A9A solid 3px;
+  font-family: Bebas Neue;
+  font-size: 20px;
+}
 
 
 
