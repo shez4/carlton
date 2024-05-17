@@ -2,42 +2,412 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* Image CSS */
-.image  {
 
-    width: auto;
-    height: 300px;
+/* Poppins google font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bebas neue font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Lora font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.image-container  {
-    object-fit: cover;
-    height: calc(50vw * 9 /16);
-    width: 100%;
-    display: flex;
-    
-
+body{
+  margin: 0;
+  height: 100%;
+  font-family: poppins;
 }
+/* To align the logo, search-bar and the navbar together  */
+.header{
+  height: 60px;
+  display: flex;
+  flex-direction: row;   /*not needed because the flex fall to row as a defualt*/
+  justify-content: space-between;
+  
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+.logo{
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+}
+/* puts the serch-bar and the button side by side */
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 470px;
+}
+
+.search-button{
+  background: transparent;
+  border: 0;
+}
+
+.icon-search{
+  padding-bottom: 5px;
+}
+
+.search-bar{
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 25px;
+  max-width: 300px;
+  border-color: rgb(192, 192, 192);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05)
+}
+
+.search-bar::placeholder{
+  font-family: PT Serif;
+}
+
+/* Navigation styling */
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: Playfair Display;
+}
+
+.topnav a:hover {
+  background-color: #fff;
+  color: #000;
+  /* text-decoration: underline; */
+}
+
+
+/* Responsive design */
+.topnav .icon {
+  display: none;
+}
+
+/* responsive for menu */
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child){display: none}
+  .topnav a.icon{
+    float: right;
+    display:block;
+  } 
+  .search-bar{
+    display: none;
+  }
+  .icon-search{
+    display: none;
+  }
+}
+/* responsive for menu */
+@media  screen and (max-width: 600px) {
+  .topnv.responsive {position: relative}
+  .topnav .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top .responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+
+/* hero image */
+.image-container{
+  background-image: url(Imagers/pexels-pixabay-162466.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 100%;
+  height: calc(50vw * 9 / 16);
+  padding: 25px;
+  display: block;
+  object-fit: cover;
+  /* Ajust the button to the botton left */
+  /* display: flex;
+  justify-content:left;
+  align-items: end; */
+}
+
+/* button in image section */
+.shop-button{
+  color: #9A9A9A;
+  background: transparent;
+  border: 10px;
+  padding: 10px 9px;
+  border: #9A9A9A solid 3px;
+  font-family: Bebas Neue;
+  font-size: 20px;
+}
+/* button hover */
+.shop-button:hover{
+  color: white;
+  background: #9A9A9A;
+}
+
+/* text statement CSS */
+.statement{
+  padding-top: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 20px;
+  font-family: EB Garamond;
+  font-style: italic ;
+  text-align: center;
+}
+
+.topic-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.line1{
+  border: 1px solid black;
+  flex: 1;
+  max-width: 200px;
+}
+
+.featured-products{
+  font-family: Lora;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.line2{
+  border: 1px solid black;
+  flex: 2;
+  max-width: 200px;
+}
+
+.images-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.img1 img{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.img2 img{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.img3 img{
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
 
 .txt  {
     
     text-align: center;
-    color: white;
-
-    
-
+    color: black;
+    position: relative;
+    font-size: 18px;
+    font-style: italic;
 }
 
 
 .title {
 
     text-align: center;
-    border: transparent;
     color: white;
-    border: 15px solid white;
+    position:relative;
+    font-size: 80px;
+    font-family: Babes Neue;
+
+    
 }
 
-.title-name{
-    justify-content: center;
-    text-align: center;
+
+/* footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-links {
+    list-style: none;
+    padding-left: 0;
+  }
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  footer{
+    background-color: black;
+  }
+  
+  .links{
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.2s;
+  }
+  
+  .links:hover{
+    color: #9A9A9A;
+  }
+  
+  .social-icons li a{
+    color: white;
+  }
+  
+  .social-icons li a:hover{
+      color: #9A9A9A;
+  }
+  
+  .E-btn{
+    color: #9A9A9A;
+    background: transparent;
+    padding: 10px 9px;
+    border: #9A9A9A solid 3px;
+    font-family: Bebas Neue;
+    font-size: 20px; 
+  }
+  
+  .E-btn:hover{
+    color: white;
+    background: #9A9A9A;
+  }
+  
+  .topics{
+    font-family: playfair Display;
+    text-decoration: underline;
+  }
+
+  /* Bebas neue font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+  --cs-border-color: rgb(255, 255, 255);
+  --cs-btn-color-white: rgb(255, 255, 255);
+  --cs-btn-font: Bebas neue;
+  --cs-button-border:  #9A9A9A solid 3px;
 }
 
+
+.lead{
+  color: black;
+  font-family: Playfair Display;
+}
+
+.container{
+  background-color: black;
+  margin-bottom: 20px;
+}
+/* Custom button styles */
+.btn-custom {
+  font-family: var(--cs-btn-font); /* Use custom font */
+  border: var(--cs-button-border); /* Use custom border */
+  color: var(--cs-btn-color-white); /* Use custom color */
+  background-color: transparent; /* Use custom background color */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.btn-custom:hover {
+  background-color: #9A9A9A; /* Adjust hover background color */
+  color: white; /* Adjust hover color */
+}
+
+.btn.btn-outline-dark {
+    --bs-btn-color: #9A9A9A;
+    --bs-btn-border-color: #9A9A9A;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #212529;
+    --bs-btn-hover-border-color: #212529;
+    --bs-btn-focus-shadow-rgb: 33, 37, 41;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #212529;
+    --bs-btn-active-border-color: #212529;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #212529;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #212529;
+    --bs-gradient: none;
+    --bs-btn-font-family: Bebas Neue;
+}
+
+.btn {
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+
+  /* font-family: Bebas Neue; */
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: --cs-button-border;
+  background-color: var(--bs-btn-bg);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
