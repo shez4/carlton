@@ -13,13 +13,26 @@
 
 
 .lead{
-  color: white;
+  color: black;
   font-family: Playfair Display;
 }
 
 .container{
   background-color: black;
   margin-bottom: 20px;
+}
+/* Custom button styles */
+.btn-custom {
+  font-family: var(--cs-btn-font); /* Use custom font */
+  border: var(--cs-button-border); /* Use custom border */
+  color: var(--cs-btn-color-white); /* Use custom color */
+  background-color: transparent; /* Use custom background color */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.btn-custom:hover {
+  background-color: #9A9A9A; /* Adjust hover background color */
+  color: white; /* Adjust hover color */
 }
 
 .btn.btn-outline-dark {

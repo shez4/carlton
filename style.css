@@ -17,7 +17,7 @@
 body{
   margin: 0;
   height: 100%;
-  font-family: poppins;
+  width: 100%;
 }
 /* To align the logo, search-bar and the navbar together  */
 .header{
@@ -78,6 +78,7 @@ body{
   text-align: center;
 }
 
+
 .topnav a {
   float: right;
   display: block;
@@ -129,7 +130,6 @@ body{
     display: block;
     text-align: left;
   }
-  
 }
 
 /* hero image */
@@ -325,6 +325,12 @@ body{
 }
 
 /* Showcase CSS */
+.bt{
+  font-size: 15px;
+  font-family: playfair display;
+  color: white;
+}
+
 .sm-button{
   color: #9A9A9A;
   background: transparent;
@@ -334,6 +340,92 @@ body{
   font-size: 20px;
 }
 
+.sm-button:hover{
+  color: white;
+  background: #9A9A9A;
+}
+/* testomony section CSS */
+.my-column {
+  float: left;
+  width: calc(33.33% - 1px); /* Adjusted width to accommodate border */
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc; /* Add right border to all columns */
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 16px; /* Set font size */
+}
+
+.my-column:last-child {
+  border-right: none; /* Remove right border from last column */
+}
+
+
+
+/* footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+footer{
+  background-color: black;
+}
+
+.links{
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 0.2s;
+}
+
+.links:hover{
+  color: #9A9A9A;
+}
+
+.social-icons li a{
+  color: white;
+}
+
+.social-icons li a:hover{
+    color: #9A9A9A;
+}
+
+.E-btn{
+  color: #9A9A9A;
+  background: transparent;
+  padding: 10px 9px;
+  border: #9A9A9A solid 3px;
+  font-family: Bebas Neue;
+  font-size: 20px; 
+}
+
+.E-btn:hover{
+  color: white;
+  background: #9A9A9A;
+}
+
+.topics{
+  font-family: playfair Display;
+  text-decoration: underline;
+}
 
 
 
