@@ -1,16 +1,24 @@
 /* Poppins google font link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Font for Roboto serif */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-/* Reset default styles */
-@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet');
 
+/* Bebas neue font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Lora font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body{
-  margin: 0px;
-  font-family: Roboto Serif;
-  }
-
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
 
 .header{
   height: 60px;
@@ -457,3 +465,78 @@ button:hover {
   background-size: cover;
   position: relative;
 }
+
+/* SHANAL WHOLE CODE */
+/* Showcase CSS */
+/* Poppins google font link */
+
+
+
+
+
+/* footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+footer{
+  background-color: black;
+}
+
+.links{
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 0.2s;
+}
+
+.links:hover{
+  color: #9A9A9A;
+}
+
+.social-icons li a{
+  color: white;
+}
+
+.social-icons li a:hover{
+    color: #9A9A9A;
+}
+
+.E-btn{
+  color: #9A9A9A;
+  background: transparent;
+  padding: 10px 9px;
+  border: #9A9A9A solid 3px;
+  font-family: Bebas Neue;
+  font-size: 20px; 
+}
+
+.E-btn:hover{
+  color: white;
+  background: #9A9A9A;
+}
+
+.topics{
+  font-family: playfair Display;
+  text-decoration: underline;
+}
+
