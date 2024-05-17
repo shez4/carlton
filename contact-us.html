@@ -30,17 +30,29 @@
     <title>Carlton</title>
   </head>
   <body>
-    <nav class="topnav" id="myTopnav">
-      <ul>
-        <a href="index.html" class="active">Home</a>
-        <a href="watches">Watches</a>
-        <a href="about">About</a>
-        <a href="contact-us">Contactus</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i
-        ></a>
-      </ul>
-    </nav>
+    <div class="header">
+      <div class="logo-container">
+        <img class="logo" src="./Imagers/transparent-logo.png" alt="logo">
+      </div>
+      <div class="search-container">
+        <input class="search-bar" type="search" placeholder="Search">
+        <button class="search-button">
+          <img class="icon-search"  src="search.svg" alt="search icons">
+        </button>
+      </div>
+      <div>
+        <nav class="topnav" id="myTopnav">
+          <ul>
+            <a href="contact-us.html">Contactus</a>
+            <a href="about.html">About</a>
+            <a href="watches.html">Watches</a>
+            <a href="index.html" >Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <!-- Main image container -->
     <div class="topimage">
       <!-- text in center of image -->
@@ -51,12 +63,16 @@
     <hr class="line" />
     <h2 class="topic"> Phone Number </h1>
     <p class="details"> On Call or Text</p>
+    <a href="tel:8882192787">
     <button class="contact"> 020 1234 1235 </button>
+    </a>
     <!-- Email section  -->
     <hr class="line" />
     <h2 class="topic"> Email</h2>
     <p class="details"> Other Information</p>
-    <button class="contact"> carlton watches@gmail.com </button>
+    <a href="mailto:carltonwatches@gmail.com">
+    <button class="contact"> carltonwatches@gmail.com </button>
+    </a>
     <!-- Store location section  -->
     <hr class="line" />
     <h2 class="topic"> Store </h2>
