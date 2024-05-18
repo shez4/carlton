@@ -1,0 +1,541 @@
+/* Poppins google font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bebas neue font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Lora font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header{
+  height: 60px;
+  display: flex;
+  flex-direction: row;   /*not needed because the flex fall to row as a defualt*/
+  justify-content: space-between;
+  
+}
+/* Start of Top Bar */
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+.logo{
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+}
+/* puts the serch-bar and the button side by side */
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 470px;
+}
+
+.search-button{
+  background: transparent;
+  border: 0;
+}
+
+.icon-search{
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.search-bar{
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 25px;
+  max-width: 300px;
+  border-color: rgb(192, 192, 192);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05)
+}
+
+.search-bar::placeholder{
+  font-family: PT Serif;
+}
+
+/* Navigation styling */
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Playfair Display;
+}
+
+.topnav a:hover {
+  background-color: #fff;
+  color: #000;
+  /* text-decoration: underline; */
+}
+
+
+/* Responsive design */
+.topnav .icon {
+  display: none;
+}
+
+/* responsive for menu */
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child){display: none}
+  .topnav a.icon{
+    float: right;
+    display:block;
+  } 
+  .search-bar{
+    display: none;
+  }
+  .icon-search{
+    display: none;
+  }
+}
+/* responsive for menu */
+@media  screen and (max-width: 600px) {
+  .topnv.responsive {position: relative}
+  .topnav .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top .responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child){display: none}
+  .topnav a.icon{
+    float: right;
+    display:block;
+  } 
+}
+
+@media  screen and (max-width: 600px) {
+  .topnv.responsive {position: relative}
+  .topnav .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top .responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+ /* End of Top Bar */ 
+/* Main image on top of Page */
+.topimage {
+  background-image: url(Imagers/pexels-pixabay-162466.jpg);
+  /* width: 100%; */
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* text in center of image */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150px;
+  font-family: Roboto Serif;
+  text-align: center;
+}
+
+/* changing font size in top image text */
+@media screen and (max-width:600px) {
+  .centered{
+    font-size: 70px;
+  }
+  .topimage{
+    height: 400px;
+  }
+}
+.enquire { 
+  color: black;
+  position: relative;
+  bottom: -70px ;
+  text-align: center;
+  font-weight: 500;
+  
+}
+/* Horizontal Line */
+hr.line {
+  border: 1 solid rgb(0, 0, 0);
+  position: relative;
+  bottom: -100px;
+
+}
+/* Title for contact section */
+.topic {
+  color: black;
+  position: relative;
+  font-weight: 500;
+  left: 100px;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  
+}
+/* Description for contact section */
+.details {
+  position: relative;
+  left: 120px;
+
+}
+/* button for contact section */
+.contact {
+  position: relative;
+  float: right;
+  height: 70px;
+  width: -700px;
+  margin-right: 50px;
+  font-family: Roboto Serif;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: -70px;
+}
+
+/* Products Content */
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.img1{
+  width:400px;
+  height: 500px;
+  border-radius: 10px;
+  
+}
+.box{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width:25rem;
+  min-width:18rem;
+  margin: 100px;
+  text-align: center;
+  top: -20px;
+  position: relative;
+}
+
+h3 { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: Rufina;
+  text-align: center;
+  font-weight: lighter;
+} 
+/* button for the product image */
+.buttontop {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  filter: grayscale(100%);
+
+}
+@media screen and (max-width:600px){
+button.contact { 
+  position: relative;
+  bottom: -60px;
+  text-align: center;
+}
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+  transition-duration: 100ms;
+  filter: grayscale(0%);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+/* Text in the middle */
+.linewatches {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #000;
+  margin: 0 10px;
+  position: relative;
+  top: 0px;
+}
+
+.title {
+  font-size: 2em;
+  font-family: Rufina;
+}
+.containertop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.containertop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (max-width:600px) {
+  .containertop   {
+      display: none;
+  }
+}
+.image-grid {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item {
+  flex: 1;
+  margin: 30px;
+}
+
+.image-item img { 
+  width: 400px;
+  height: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d3d3d3;
+  padding: 55px;
+  border: 1px solid #ccc;
+}
+
+.feature-item {
+  font-size: 4em;
+  color: #fff;
+  padding:20px;
+  width: 550px;
+}
+
+/* Style for Product Page */
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+.product-image {
+  flex: 1;
+  padding: 20px;
+
+}
+.product-details {
+  flex: 1;
+  padding: 20px;
+}
+.product-image img {
+  max-width: 100%;
+  height: 800px;
+  object-fit:cover;
+
+}
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.product-price {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+.add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.buy-now {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: Roboto Serif;
+  position: relative;
+  bottom: -40px;
+}
+
+/* Main image on top of Mens Page */
+.topimagemen {
+  background-image: url(Imagers/mens2.jpg);
+  /* width: 100%; */
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.imgtext {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px; /* optional: for rounded corners */
+  font-size: 20px; /* adjust as needed */
+  text-align: center;
+  font-family: Rufina;
+}
+/* Main image on women page */
+.topimagewomens {
+  background-image: url(Imagers/womens2.jpg);
+  /* width: 100%; */
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* SHANAL WHOLE CODE */
+/* Showcase CSS */
+/* Poppins google font link */
+
+
+
+
+
+/* footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+footer{
+  background-color: black;
+}
+
+.links{
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 0.2s;
+}
+
+.links:hover{
+  color: #9A9A9A;
+}
+
+.social-icons li a{
+  color: white;
+}
+
+.social-icons li a:hover{
+    color: #9A9A9A;
+}
+
+.E-btn{
+  color: #9A9A9A;
+  background: transparent;
+  padding: 10px 9px;
+  border: #9A9A9A solid 3px;
+  font-family: Bebas Neue;
+  font-size: 20px; 
+}
+
+.E-btn:hover{
+  color: white;
+  background: #9A9A9A;
+}
+
+.topics{
+  font-family: playfair Display;
+  text-decoration: underline;
+}
+
